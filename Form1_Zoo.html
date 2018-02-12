@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	 <title>Zoo</title>  
+   <style type="text/css">
+   .field {
+    clear:both; 
+    text-align:right;
+    line-height:25px;
+   }
+   label {
+    float:left;
+    padding-right:40px;
+   }
+   .main {
+    float:left
+   }
+
+   form textarea {
+   width: 250px;
+   height: 100px;
+   }
+   table {
+    border: 0px ;
+   } 
+   td {
+     width: 25%;  
+     }
+   </style>
+
+</head>
+
+<body>
+  <h1>Форма заявки на работу в зоопарке</h1>
+  <p><em>Пожалуйста, заполните форму. Обязательные поля помечены <font color="red">*</font></em></p>
+   <form action="">
+
+     <fieldset>
+     <legend><b><font face="MS Sans Serif" size="3">Контатная информация</font></b></legend>
+     <div class="main">
+     <div class="field"><label for="name">Имя <em><font color="red">*</font></em></label><input type="text" id="name" size="20" required/></div>
+     <div class="field"><label for="number">Телефон</label><input  type = "tel" id="number" size="20" /></div>
+     <div class="field"><label for="email">Email <em><font color="red">*</font></em></label><input type = "email" id="email" size="20" required /></div>
+     </div>
+     </fieldset>
+     <br />
+
+     <fieldset>
+     <legend><b><font face="MS Sans Serif" size="3">Персональная информация</font></b></legend>
+     <div class="main">
+     <div class="field"><label for="age">Возраст <em><font color="red">*</font></em></label><input type="text" id="age" size="20" required /></div>
+     <div class="field"><label>Пол</label><select name="Пол" >
+        <option selected value="s1">Женщина</option>
+        <option value="s2">Мужчина</option> 
+     </select></div>
+     <div class="field"><label>Перечислите личные качетсва</label>
+        <textarea id="form_about" name="about"></textarea></div>
+     </div>
+     </fieldset>
+     <br />
+
+     <fieldset>
+      <legend><b><font face="MS Sans Serif" size="3">Выберите ваших любимых животных</font></b></legend>
+      <table><tr>
+        <td><input type = "checkbox" name = "option" value = "зебра">Зебра</td>
+        <td><input type = "checkbox" name = "option" value = "кошак">Кошак</td>
+        <td><input type = "checkbox" name = "option" value = "анаконда">Анаконда</td>
+        <td><input type = "checkbox" name = "option" value = "человек">Человек</td> </tr>
+        <tr>
+        <td><input type = "checkbox" name = "option"” value = "слон">Слон</td>
+        <td><input type = "checkbox" name = "option" value = "антилопа">Антилопа</td>
+        <td><input type = "checkbox" name = "option" value = "голубь">Голубь</td>
+        <td><input type = "checkbox" name = "option" value = "краб">Краб </td></tr>
+      </table>
+     </fieldset>
+     <br />
+
+     <input type="submit" value="Отправить информацию" />
+     
+   </form>
+</body>
+
+</html>
