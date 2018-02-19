@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	 <title>Form</title>  
+   <style type="text/css">
+  textarea {
+  	 width: 98%; 
+  	 height: 150px;
+  	 resize: none;
+  }
+  .p1 {
+  	margin: 3%;
+  }
+   </style>
+
+</head>
+
+<body>
+  <h1>Форма заказа "Сандали"</h1>
+  <p>Хотите приобрести такие сандали, которых ни у кого нет? Заказывайте обувь у нас и вам будут завидовать все окружающие!</p>
+  <p>Сведения о заказчике
+   <form action="http://rightman.p.ht/lwd/contest.php" method="post" name="commentform" id="commentform">
+     
+     <p class="p1"><label for="name">Имя:</label><input type="text" id="name" size="20" required/></p>
+     <p class="p1"><label for="email">Email:</label><input type = "email" id="email" size="20" required /></p>
+     <p class="p1"><label for="phone">Телефон:</label><input  type = "phone" id="phone" size="20" /></p>
+	 <p class="p1"><label >Я хочу такие сандали, потому что...</label></p>
+         <p class="p1"><textarea id="story" name="story" placeholder="Не более 300 символов..."></textarea></p>
+    
+
+     <h2>Выберите дизайн сандалей:</h2>
+     <fieldset>
+      <legend>Характеристики</legend>
+      <fieldset>
+      <legend>Цвет<em>(выберите один пункт)</em></legend>
+        <p><input type = "radio" name = "color" value = "красный">Красный</p>
+        <p><input type = "radio" name = "color" value = "синий">Синий</p>
+        <p><input type = "radio" name = "color" value = "черный">Черный</p>
+        <p><input type = "radio" name = "color" value = "серебрянный">Серебрянный</p>
+      </fieldset>
+      <fieldset>
+      <legend>Дополнительно<em>(выберите один или несколько пунктов)</em></font></legend>
+        <p><input type = "checkbox" name = "features" value = "зебра">Глянцевые ободки</p>
+        <p><input type = "checkbox" name = "features" value = "кошак" checked>Металлическая бляшка</p>
+        <p><input type = "checkbox" name = "features" value = "анаконда">Светящаяся подошва</p>
+        <p><input type = "checkbox" name = "features" value = "человек">Mp3-проигрыватель</p>
+     </fieldset>
+     <fieldset>
+     <legend>Размер</legend>
+      Стандартные российские размеры:
+       <select name = "size">
+       	<option>33</option>
+       	<option>34</option>
+       	<option>35</option>
+       	<option>36</option>
+       	<option>37</option>
+       	<option>38</option>
+       	<option>39</option>
+       	<option>40</option>
+       	<option>41</option>
+       	<option>42</option>
+       	<option>43</option>
+       </select>
+      </fieldset>
+     </fieldset>
+     <br />
+
+     <input type="submit" value="Заказать!" />
+     <input type="reset" value="Сброс" />
+     
+   </form>
+</body>
+
+</html>
